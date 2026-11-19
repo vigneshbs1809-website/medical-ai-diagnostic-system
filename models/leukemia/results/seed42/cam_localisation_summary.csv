@@ -1,0 +1,2 @@
+model,mask_area,cam_inside,focus_ratio,peak_inside
+efficientnet_b3,0.157,0.686,4.522,0.965

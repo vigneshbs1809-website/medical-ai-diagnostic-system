@@ -1,0 +1,23 @@
+{
+  "exp": "densenet121",
+  "seed": 42,
+  "params_total": 7216770,
+  "params_trainable": 7216770,
+  "train_time_sec": 325.94926714897156,
+  "epochs_run": 7,
+  "best_epoch": 3,
+  "best_monitor": "val_loss",
+  "best_value": 0.3925682723021307,
+  "batch_size": 32,
+  "img_size": 224,
+  "amp": true,
+  "train_images": 7768,
+  "val_images": 1190,
+  "class_weights": [
+    1.6264656782150269,
+    0.7219330668449402
+  ],
+  "overfit_gap_acc_at_best": 0.03258603027988061,
+  "ms_per_image_batch": 1.3229511678218842,
+  "ms_per_image_single": 22.440385818481445
+}

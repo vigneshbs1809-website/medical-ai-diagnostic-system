@@ -1,0 +1,12 @@
+{
+ "model": "yolo26m",
+ "conf": 0.6500000000000002,
+ "imgsz": 800,
+ "nms_iou": 0.6,
+ "names": {
+  "0": "plasma_cell",
+  "1": "non_plasma_cell"
+ },
+ "plasma_id": 0,
+ "epochs": 30
+}

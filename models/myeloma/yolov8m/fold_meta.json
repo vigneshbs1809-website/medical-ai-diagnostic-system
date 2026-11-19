@@ -1,0 +1,27 @@
+{
+ "0": {
+  "best_epoch": 28,
+  "epochs_run": 30,
+  "sig": "yolov8m.pt|800|30|15|16"
+ },
+ "1": {
+  "best_epoch": 24,
+  "epochs_run": 30,
+  "sig": "yolov8m.pt|800|30|15|16"
+ },
+ "2": {
+  "best_epoch": 27,
+  "epochs_run": 30,
+  "sig": "yolov8m.pt|800|30|15|16"
+ },
+ "3": {
+  "best_epoch": 26,
+  "epochs_run": 30,
+  "sig": "yolov8m.pt|800|30|15|16"
+ },
+ "4": {
+  "best_epoch": 25,
+  "epochs_run": 30,
+  "sig": "yolov8m.pt|800|30|15|16"
+ }
+}

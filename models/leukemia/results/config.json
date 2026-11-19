@@ -1,0 +1,49 @@
+{
+  "project_dir": "/content/BALL_Classification",
+  "zip_path": "",
+  "search_roots": [
+    "/content/drive/MyDrive",
+    "/content/drive/Shareddrives"
+  ],
+  "dataset_dir": "",
+  "cache_dir": "",
+  "cache_size": 320,
+  "val_frac": 0.15,
+  "test_frac": 0.15,
+  "split_seed": 42,
+  "allow_image_level_split": false,
+  "max_per_split": 0,
+  "num_workers": 2,
+  "models": [
+    "densenet121",
+    "efficientnet_b3",
+    "swin_tiny"
+  ],
+  "seeds": [
+    42
+  ],
+  "epochs": 15,
+  "patience": 4,
+  "batch_size": 32,
+  "eval_batch_size": 64,
+  "batch_size_overrides": {},
+  "lr": 0.0001,
+  "head_lr_mult": 5.0,
+  "weight_decay": 0.01,
+  "warmup_epochs": 1.0,
+  "min_lr_ratio": 0.01,
+  "grad_clip": 1.0,
+  "label_smoothing": 0.0,
+  "dropout": 0.3,
+  "head_hidden": 256,
+  "best_metric": "f1",
+  "imbalance": "class_weights",
+  "monitor": "val_loss",
+  "pretrained": true,
+  "amp": true,
+  "bootstrap_reps": 500,
+  "explain_per_class": 4,
+  "explain_n_errors": 4,
+  "explain_n_quant": 200,
+  "explain_seed": 123
+}

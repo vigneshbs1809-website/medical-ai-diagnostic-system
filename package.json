@@ -1,0 +1,11 @@
+{
+  "name": "medical-ai-diagnostic-system",
+  "version": "1.0.0",
+  "private": true,
+  "description": "Medical AI Diagnostic Platform - Dual Deep-Learning Hematology Decision Support Suite",
+  "scripts": {
+    "dev": "npm --prefix client run dev",
+    "build": "npm --prefix client run build",
+    "preview": "npm --prefix client run preview"
+  }
+}

@@ -1,0 +1,59 @@
+# ===========================================================================
+# Medical AI Diagnostic System - .gitignore
+# ===========================================================================
+
+# Python virtual environment and dependencies
+.venv/
+venv/
+env/
+ENV/
+*.pyc
+*.pyo
+*.pyd
+__pycache__/
+*.egg-info/
+dist/
+build/
+*.egg
+
+# Node.js and Frontend dependencies
+node_modules/
+.npm/
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+.pnpm-debug.log*
+client/node_modules/
+
+# Production frontend build (uncomment if you only want to build on CI)
+# client/dist/
+
+# Large ZIP archives and raw dataset bundles (Google Drive dumps)
+*.zip
+*.tar
+*.tar.gz
+*.rar
+*.7z
+
+# Large baseline comparison model checkpoints (>100MB, exceeds GitHub limit)
+# Note: Deployed champion checkpoints (efficientnet_b3_best.pt & final_yolo26m.pt) are retained!
+models/leukemia/checkpoints/seed42/convnext_tiny_best.pt
+models/leukemia/checkpoints/seed42/hybrid_attention_best.pt
+models/leukemia/checkpoints/seed42/hybrid_concat_best.pt
+models/leukemia/checkpoints/seed42/swin_tiny_best.pt
+
+# Intermediate training fold checkpoint duplicates (fold0..fold4, ~700MB)
+models/myeloma/fold*.pt
+models/myeloma/yolo26m/fold*.pt
+models/myeloma/yolov8m/fold*.pt
+
+# IDE, OS, and local environment files
+.vscode/
+.idea/
+.DS_Store
+Thumbs.db
+*.tmp
+*.log
+.env
+.env.local
+.env.*.local

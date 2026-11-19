@@ -1,0 +1,11 @@
+patient,diagnosis,gt_cells,gt_plasma,gt_plasma_pct,pred_cells,pred_plasma,pred_plasma_pct,flag_>10%
+1,diseased,202,82,40.6,199,85,42.7,True
+2,diseased,205,78,38.0,203,77,37.9,True
+3,diseased,201,73,36.3,204,81,39.7,True
+4,diseased,200,84,42.0,205,83,40.5,True
+5,diseased,200,71,35.5,182,69,37.9,True
+6,normal,200,15,7.5,199,17,8.5,False
+7,normal,205,18,8.8,223,21,9.4,False
+8,normal,208,9,4.3,217,11,5.1,False
+9,normal,202,14,6.9,223,15,6.7,False
+10,normal,203,15,7.4,201,9,4.5,False

@@ -1,0 +1,23 @@
+{
+  "exp": "convnext_tiny",
+  "seed": 42,
+  "params_total": 28017506,
+  "params_trainable": 28017506,
+  "train_time_sec": 266.728333234787,
+  "epochs_run": 5,
+  "best_epoch": 1,
+  "best_monitor": "val_loss",
+  "best_value": 0.4231297402822671,
+  "batch_size": 32,
+  "img_size": 224,
+  "amp": true,
+  "train_images": 7768,
+  "val_images": 1190,
+  "class_weights": [
+    1.6264656782150269,
+    0.7219330668449402
+  ],
+  "overfit_gap_acc_at_best": -0.07649749982637677,
+  "ms_per_image_batch": 1.6119766980409622,
+  "ms_per_image_single": 13.812367121378582
+}

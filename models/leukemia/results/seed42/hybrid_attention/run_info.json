@@ -1,0 +1,23 @@
+{
+  "exp": "hybrid_attention",
+  "seed": 42,
+  "params_total": 36051196,
+  "params_trainable": 36051196,
+  "train_time_sec": 790.6639981269836,
+  "epochs_run": 8,
+  "best_epoch": 4,
+  "best_monitor": "val_loss",
+  "best_value": 0.4042439645078002,
+  "batch_size": 32,
+  "img_size": 224,
+  "amp": true,
+  "train_images": 7768,
+  "val_images": 1190,
+  "class_weights": [
+    1.6264656782150269,
+    0.7219330668449402
+  ],
+  "overfit_gap_acc_at_best": 0.03372673449545105,
+  "ms_per_image_batch": 3.809580020606518,
+  "ms_per_image_single": 52.75230407714844
+}

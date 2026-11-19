@@ -1,0 +1,4 @@
+pair,pearson,top20_iou
+densenet121 vs hybrid,0.525,0.392
+densenet121 vs swin_tiny,0.822,0.701
+swin_tiny vs hybrid,0.542,0.393

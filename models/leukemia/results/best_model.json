@@ -1,0 +1,14 @@
+{
+  "best_model": "efficientnet_b3",
+  "display_name": "EfficientNet-B3",
+  "selected_by": "f1",
+  "tie_break": [
+    "f1",
+    "roc_auc"
+  ],
+  "scores": {
+    "DenseNet121": 0.9187109187109187,
+    "EfficientNet-B3": 0.9481481481481482,
+    "Swin-Tiny": 0.9352967425256582
+  }
+}

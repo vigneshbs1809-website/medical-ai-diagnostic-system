@@ -1,0 +1,23 @@
+{
+  "exp": "swin_tiny",
+  "seed": 42,
+  "params_total": 27716732,
+  "params_trainable": 27716732,
+  "train_time_sec": 442.893940448761,
+  "epochs_run": 8,
+  "best_epoch": 4,
+  "best_monitor": "val_loss",
+  "best_value": 0.42512422589694754,
+  "batch_size": 32,
+  "img_size": 224,
+  "amp": true,
+  "train_images": 7768,
+  "val_images": 1190,
+  "class_weights": [
+    1.6264656782150269,
+    0.7219330668449402
+  ],
+  "overfit_gap_acc_at_best": 0.07394740954232937,
+  "ms_per_image_batch": 1.9538791850209234,
+  "ms_per_image_single": 16.86061223347982
+}

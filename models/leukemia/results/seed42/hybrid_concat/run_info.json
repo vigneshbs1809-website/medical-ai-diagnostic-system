@@ -1,0 +1,23 @@
+{
+  "exp": "hybrid_concat",
+  "seed": 42,
+  "params_total": 35656700,
+  "params_trainable": 35656700,
+  "train_time_sec": 887.4511551856995,
+  "epochs_run": 9,
+  "best_epoch": 5,
+  "best_monitor": "val_loss",
+  "best_value": 0.4349791106055765,
+  "batch_size": 32,
+  "img_size": 224,
+  "amp": true,
+  "train_images": 7768,
+  "val_images": 1190,
+  "class_weights": [
+    1.6264656782150269,
+    0.7219330668449402
+  ],
+  "overfit_gap_acc_at_best": 0.06668475241336203,
+  "ms_per_image_batch": 3.7444574758410454,
+  "ms_per_image_single": 43.487540880839035
+}

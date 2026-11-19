@@ -1,0 +1,64 @@
+[find_zip] 6 zip(s) found, 2 contain >= 500 images
+    {'path': '/content/drive/MyDrive/data/Diabetic Retinopathy Dataset.zip', 'ok': True, 'size_gb': 0.37, 'n_files': 3662, 'n_images': 3662, 'n_uid_names': 0, 'n_fold_paths': 0, 'n_suffix_names': 0}
+    {'path': '/content/drive/MyDrive/capstone/data/dataset.zip', 'ok': True, 'size_gb': 0.91, 'n_files': 15115, 'n_images': 15114, 'n_uid_names': 10661, 'n_fold_paths': 10661, 'n_suffix_names': 10661}
+Using ZIP: /content/drive/MyDrive/capstone/data/dataset.zip
+ZIP entries: 15115   extensions: {'.bmp': 15114, '.csv': 1}
+Top-level folders in ZIP: {'C-NMC_Leukemia': 15115}
+[extract] copying 0.91 GB from Drive to local disk ...
+[extract] extracting 15115 entries -> /content/BALL_Classification/dataset
+   ... 3000/15115
+   ... 6000/15115
+   ... 9000/15115
+   ... 12000/15115
+   ... 15000/15115
+[csv] C-NMC_test_prelim_phase_data_labels.csv: filename col='new_names', uid col='Patient_ID', label col='labels'
+      label-column vs UID-suffix cross-tab (verifies the CSV encoding):
+uid_suffix_is_ALL    0     1
+labels                      
+0                  648     0
+1                    0  1219
+      numeric labels without a verifiable encoding -> NOT used (cannot confirm 0/1 meaning).
+[cache] decoding 15114 images -> /content/BALL_Classification/cache/images_320.npy
+   ... 2000/15114 (14s)
+   ... 4000/15114 (25s)
+   ... 6000/15114 (33s)
+   ... 8000/15114 (44s)
+   ... 10000/15114 (54s)
+   ... 12000/15114 (63s)
+   ... 14000/15114 (76s)
+
+================ DATASET INSPECTION ================
+Images found: 15114   extensions: {'.bmp': 15114}
+Image sizes (w,h): {(450, 450): 12528, (600, 600): 2586}   modes: {'RGB': 15114}
+Corrupted / unreadable images: 0
+Label evidence: {(-1, 'none'): 4453, (1, 'filename suffix _all'): 7272, (0, 'filename suffix _hem'): 3389}
+Labels (1=B-ALL, 0=Normal, -1=unknown): {-1: 4453, 1: 7272, 0: 3389}
+Partition x fold x label:
+partition        fold    label
+testing_data             -1       2586
+training_data    fold_0   0       1130
+                          1       2397
+                 fold_1   0       1163
+                          1       2418
+                 fold_2   0       1096
+                          1       2457
+validation_data          -1       1867
+Images with a parsable patient id: 10661 / 15114
+Distinct patients: 73   (B-ALL patients: 47, Normal patients: 26, mixed/unknown: 0)
+Images per patient: min 9, median 111, max 757
+Patients appearing in more than one official fold: 0 (0 means the official folds are patient-disjoint)
+
+================ PATIENT-INDEPENDENT SPLITS ================
+Images per split x class (0=Normal, 1=B-ALL):
+label     0     1
+split            
+test    647  1056
+train  2388  5380
+val     354   836
+Patients per split x class:
+label   0   1
+split        
+test    4   7
+train  18  33
+val     4   7
+Leakage check passed: no patient id occurs in more than one of train/val/test.
